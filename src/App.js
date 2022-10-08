@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { extendTheme, ChakraProvider } from "@chakra-ui/react";
+import { Route } from "react-router-dom";
+
+import Main from "./pages/Main";
+import Navbar from "./components/Navbar";
+import Stage from "./pages/Stage";
+
+import "./App.css";
+
+const colors = {
+	brand: {
+		900: "#1a365d",
+		800: "#153e75",
+		700: "#2a69ac",
+	},
+};
+
+const theme = extendTheme({ colors });
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<ChakraProvider theme={theme}>
+			<Route path="/">
+				<Navbar />
+				<Main />
+			</Route>
+			<Route path="/stages/:name">
+				<Stage />
+			</Route>
+		</ChakraProvider>
+	);
 }
 
 export default App;
