@@ -1,11 +1,15 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Heading, Container } from '@chakra-ui/react';
+import Lorem from '../components/Lorem';
 
 const Main = () => {
-	return (
-		<Box bg="red.300" p="20px">
-			This is the main page
-		</Box>
-	);
+  return (
+    <Box bg="blue.300">
+      <Container>
+        <Heading mb="20px">This Is The Main Page</Heading>
+        <Lorem />
+      </Container>
+    </Box>
+  );
 };
 
 export default Main;

@@ -1,34 +1,35 @@
-import { extendTheme, ChakraProvider } from "@chakra-ui/react";
-import { Route } from "react-router-dom";
+import { extendTheme, ChakraProvider } from '@chakra-ui/react';
+import { Route, Routes } from 'react-router-dom';
 
-import Main from "./pages/Main";
-import Navbar from "./components/Navbar";
-import Stage from "./pages/Stage";
+import Main from './pages/Main';
+import Stage from './pages/Stage';
+import NotFound from './pages/NotFound';
+import DisplayWrapper from './components/DisplayWrapper';
 
-import "./App.css";
+import './App.css';
 
 const colors = {
-	brand: {
-		900: "#1a365d",
-		800: "#153e75",
-		700: "#2a69ac",
-	},
+  brand: {
+    900: '#1a365d',
+    800: '#153e75',
+    700: '#2a69ac',
+  },
 };
 
 const theme = extendTheme({ colors });
 
 function App() {
-	return (
-		<ChakraProvider theme={theme}>
-			<Route path="/">
-				<Navbar />
-				<Main />
-			</Route>
-			<Route path="/stages/:name">
-				<Stage />
-			</Route>
-		</ChakraProvider>
-	);
+  return (
+    <ChakraProvider theme={theme}>
+      <DisplayWrapper>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/stages/:name" element={<Stage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </DisplayWrapper>
+    </ChakraProvider>
+  );
 }
 
 export default App;
