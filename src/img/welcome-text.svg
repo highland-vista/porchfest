@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="788" height="400.5" viewBox="0 0 788 400.5">
+  <g id="welcome_text" data-name="welcome text" transform="translate(-146 -557)">
+    <text id="PORCHFEST22" transform="translate(540 754)" fill="#f04770" font-size="104" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-393" y="0">PORCH</tspan><tspan y="0" fill="#2b215e" font-family="Montserrat-ExtraBoldItalic, Montserrat" font-weight="800" font-style="italic">FEST</tspan><tspan y="0" fill="#f0c807" font-family="Montserrat-Italic, Montserrat" font-weight="400" font-style="italic">22</tspan></text>
+    <text id="HIGHLAND_VISTA_CINCO_VIA_WELCOMES_YOU_TO" data-name="HIGHLAND VISTA CINCO VIAWELCOMES YOU TO" transform="translate(541 592)" fill="#2b215e" font-size="36" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.04em"><tspan x="-284" y="0">HIGHLAND VISTA CINCO VIA</tspan><tspan x="-199" y="41">WELCOMES YOU TO</tspan></text>
+    <g id="Group_30" data-name="Group 30" transform="translate(-319.746 258.221)">
+      <text id="SUNDAY_NOV_20_2:00PM-6:00PM_14_BANDS_5_PORCHES" data-name="SUNDAY NOV 20
+2:00PM-6:00PM   14 BANDS   5 PORCHES" transform="translate(859.746 611.779)" fill="#f04770" font-size="63.972" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-276" y="0">SUNDAY</tspan><tspan y="0" fill="#f0c807"> </tspan><tspan y="0" fill="#2b215e">NOV 20</tspan><tspan fill="#2b215e" font-size="37"><tspan x="-391" y="48.77">2:00PM</tspan><tspan y="48.77" fill="#f04770">-</tspan><tspan y="48.77">6:00PM</tspan><tspan y="48.77" xml:space="preserve" font-family="Montserrat-Regular, Montserrat" font-weight="400">   </tspan><tspan y="48.77" fill="#f0c807" font-family="Montserrat-ExtraBoldItalic, Montserrat" font-weight="800" font-style="italic">14 BANDS</tspan><tspan y="48.77" xml:space="preserve" fill="#f04770" font-family="Montserrat-ExtraBoldItalic, Montserrat" font-weight="800" font-style="italic">   </tspan><tspan y="48.77" fill="#f04770" font-family="Montserrat-ExtraBold, Montserrat" font-weight="800">5 PORCHES</tspan></tspan></text>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="5" cy="5" r="5" transform="translate(778.632 643.711)" fill="#f04770"/>
+      <circle id="Ellipse_11" data-name="Ellipse 11" cx="5" cy="5" r="5" transform="translate(1001.632 643.711)" fill="#2b215e"/>
+    </g>
+    <line id="Line_2" data-name="Line 2" x2="254" transform="translate(413 792.5)" fill="none" stroke="#f0c807" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_6" data-name="Line 6" x2="254" transform="translate(413 956)" fill="none" stroke="#f0c807" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+  --background: #fff0cf;
+  --darkblue: #2b215e;
+  --yellow: #f0c807;
+  --red: #f04770;
+  --text: #2b215e;
+}
+
 body {
   min-height: 100vh;
-  background-color: aquamarine;
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,7 +23,28 @@ code {
     monospace;
 }
 
+nav {
+  background: var(--darkblue);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+}
+
 #root {
-  height: 100vh;
-  min-height: 100vh;
+  background-color: #fff0cf;
+  font-family: 'Montserrat', sans-serif;
+
+  /* height: 100vh;
+  min-height: 100vh; */
+}
+
+@media (max-width: 450px) {
+  :root {
+    --chakra-fontSizes-md: 10px;
+  }
 }

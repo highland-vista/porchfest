@@ -1,18 +1,30 @@
-import { extendTheme, ChakraProvider } from '@chakra-ui/react';
+import {
+  extendTheme,
+  ChakraProvider,
+  Container,
+  Flex,
+  Box,
+} from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
 
 import Main from './pages/Main';
-import Stage from './pages/Stage';
+import Porches from './pages/Porches';
+import Food from './pages/Food';
+import Map from './pages/Map';
 import NotFound from './pages/NotFound';
-import DisplayWrapper from './components/DisplayWrapper';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import './App.css';
 
 const colors = {
   brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
+    background: '#FFF0CF',
+    darkblue: '#2B215E',
+    yellow: '#F0C807',
+    red: '#F04770',
+    redHover: '#ED1D51',
+    text: '#2B215E',
   },
 };
 
@@ -21,13 +33,21 @@ const theme = extendTheme({ colors });
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <DisplayWrapper>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/stages/:name" element={<Stage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </DisplayWrapper>
+      <Container minHeight="100vh" padding="0">
+        <Flex height="100%" minHeight="100vh" direction="column">
+          <Navbar />
+          <Box as="main" flexGrow={1} color="brand.text">
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/porches" element={<Porches />} />
+              <Route path="/food" element={<Food />} />
+              <Route path="/map" element={<Map />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Box>
+          <Footer />
+        </Flex>
+      </Container>
     </ChakraProvider>
   );
 }
