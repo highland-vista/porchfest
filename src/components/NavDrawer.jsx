@@ -9,10 +9,9 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-import lineup from '../img/lineup.svg';
-import food from '../img/food.svg';
-import map from '../img/map.svg';
-import logo from '../img/logo.svg';
+import lineup from '../img/bands-w.svg';
+import food from '../img/food-w.svg';
+import logo from '../img/nav-logo.png';
 
 import { NavLink } from 'react-router-dom';
 
@@ -48,13 +47,13 @@ const NavDrawer = ({ onClose, isOpen }) => {
             imgSrc={food}
             onClick={onClose}
           />
-          <NavDrawerLink
+          {/* <NavDrawerLink
             to="/map"
             linkText={'MAP'}
             alt={'Link to map'}
             imgSrc={map}
             onClick={onClose}
-          />
+          /> */}
         </DrawerBody>
       </DrawerContent>
     </Drawer>

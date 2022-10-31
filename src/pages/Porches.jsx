@@ -1,10 +1,77 @@
-import { useParams } from 'react-router-dom';
+import { Button, Heading, Box, Divider, Text, Image } from '@chakra-ui/react';
+import { NavLink, Routes, Route } from 'react-router-dom';
+
+import PorchDetails from '../components/PorchDetails';
+
+import map from '../img/map-empty.jpg';
+import porchConfig from '../config/porchConfig';
 
 const Porches = () => {
-  // /porches/:name
-  const params = useParams();
-  console.log(params);
-  return <h1>This is the {params.name} porch</h1>;
+  return (
+    <Box bg={'#fff'} p="3rem" flexGrow={1}>
+      <Heading color={'brand.red'} size="3xl" textAlign={'center'} mt="0">
+        PORCH LINEUPS
+      </Heading>
+      <Divider
+        borderColor={'brand.yellow'}
+        borderBottomWidth="3px"
+        w="50%"
+        m="1rem auto"
+      />
+      <Text
+        textAlign={'center'}
+        fontWeight="700"
+        color={'brand.red'}
+        fontSize="xl"
+        mb="2rem"
+      >
+        CLICK TO VIEW INFO
+      </Text>
+      <Box position={'relative'}>
+        <Image
+          src={map}
+          alt="Map of porches"
+          border={'1px'}
+          borderWidth={'4px'}
+          borderColor={'brand.darkblue'}
+        />
+        {porchConfig.map((porch) => {
+          return (
+            <Button
+              key={porch.id}
+              as={NavLink}
+              to={porch.to}
+              position={'absolute'}
+              top={porch.position.top}
+              left={porch.position.left}
+              w="15%"
+              h="15%"
+              bg={'transparent'}
+              _hover={{ bg: 'transparent', filter: 'brightness(0.8)' }}
+              _active={{ bg: 'transparent' }}
+            >
+              <Image src={porch.image} alt={porch.alt} />
+            </Button>
+          );
+        })}
+      </Box>
+      <Text
+        color={'brand.darkblue'}
+        textAlign="center"
+        fontWeight={700}
+        mt=".5rem"
+        fontSize={'sm'}
+      >
+        RESTROOMS ARE AVAILABLE AT THE HIGHLAND VISTA POOL
+      </Text>
+      <Routes>
+        <Route
+          path=":porchNum"
+          element={<PorchDetails porchConfig={porchConfig} />}
+        />
+      </Routes>
+    </Box>
+  );
 };
 
 export default Porches;

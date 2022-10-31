@@ -10,7 +10,6 @@ import { Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
 import Porches from './pages/Porches';
 import Food from './pages/Food';
-import Map from './pages/Map';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -24,6 +23,7 @@ const colors = {
     yellow: '#F0C807',
     red: '#F04770',
     redHover: '#ED1D51',
+    gray: '#F5F5F5',
     text: '#2B215E',
   },
 };
@@ -36,12 +36,11 @@ function App() {
       <Container minHeight="100vh" padding="0">
         <Flex height="100%" minHeight="100vh" direction="column">
           <Navbar />
-          <Box as="main" flexGrow={1} color="brand.text">
+          <Box as="main" flexGrow={1} color="brand.text" display={'flex'}>
             <Routes>
               <Route path="/" element={<Main />} />
-              <Route path="/porches" element={<Porches />} />
+              <Route path="/porches/*" element={<Porches />} />
               <Route path="/food" element={<Food />} />
-              <Route path="/map" element={<Map />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Box>

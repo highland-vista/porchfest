@@ -4,7 +4,7 @@ import NavDrawer from './NavDrawer';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { NavLink } from 'react-router-dom';
 
-import logo from '../img/logo.svg';
+import logo from '../img/nav-logo.png';
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
