@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/porchfest/static/css/main.6413a0ec.css",
-    "main.js": "/porchfest/static/js/main.5b879c56.js",
+    "main.js": "/porchfest/static/js/main.65a2f13c.js",
     "static/js/787.f9c3e03b.chunk.js": "/porchfest/static/js/787.f9c3e03b.chunk.js",
     "static/media/map-empty.jpg": "/porchfest/static/media/map-empty.f5fa1de0c2d6f45e5826.jpg",
     "static/media/pattern.png": "/porchfest/static/media/pattern.9c4c7f583c493c8c2011.png",
@@ -18,11 +18,11 @@
     "static/media/4.svg": "/porchfest/static/media/4.0d230296d78279f80bd2d2b744f57b1b.svg",
     "static/media/1.svg": "/porchfest/static/media/1.f5c4addbd1aa2a07a40700cc8890dba6.svg",
     "main.6413a0ec.css.map": "/porchfest/static/css/main.6413a0ec.css.map",
-    "main.5b879c56.js.map": "/porchfest/static/js/main.5b879c56.js.map",
+    "main.65a2f13c.js.map": "/porchfest/static/js/main.65a2f13c.js.map",
     "787.f9c3e03b.chunk.js.map": "/porchfest/static/js/787.f9c3e03b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6413a0ec.css",
-    "static/js/main.5b879c56.js"
+    "static/js/main.65a2f13c.js"
   ]
 }
