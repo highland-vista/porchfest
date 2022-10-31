@@ -38,9 +38,9 @@ function App() {
           <Navbar />
           <Box as="main" flexGrow={1} color="brand.text" display={'flex'}>
             <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/porches/*" element={<Porches />} />
-              <Route path="/food" element={<Food />} />
+              <Route path="" element={<Main />} />
+              <Route path="porches/*" element={<Porches />} />
+              <Route path="food" element={<Food />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Box>
