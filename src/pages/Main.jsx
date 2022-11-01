@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <Box flexGrow={1} display="flex" flexDirection={'column'}>
       <Image src={pattern} w="100%" />
-      <Box p="3rem" bg="#fff" flexGrow={1}>
+      <Box p={['1rem', '2rem']} bg="#fff" flexGrow={1}>
         <Image src={welcomeText} w="100%" mb="2rem" />
         <Grid templateColumns={'45% 10% 45%'}>
           <GraphicLink

@@ -26,6 +26,13 @@ const colors = {
     gray: '#F5F5F5',
     text: '#2B215E',
   },
+  components: {
+    Heading: {
+      baseStyle: {
+        fontWeight: 300,
+      },
+    },
+  },
 };
 
 const theme = extendTheme({ colors });
@@ -38,9 +45,9 @@ function App() {
           <Navbar />
           <Box as="main" flexGrow={1} color="brand.text" display={'flex'}>
             <Routes>
-              <Route path="" element={<Main />} />
-              <Route path="porches/*" element={<Porches />} />
-              <Route path="food" element={<Food />} />
+              <Route path="/" element={<Main />} />
+              <Route path="/porches/*" element={<Porches />} />
+              <Route path="/food" element={<Food />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Box>

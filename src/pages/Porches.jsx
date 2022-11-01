@@ -3,13 +3,13 @@ import { NavLink, Routes, Route } from 'react-router-dom';
 
 import PorchDetails from '../components/PorchDetails';
 
-import map from '../img/map-empty.jpg';
+import map from '../img/map.jpg';
 import porchConfig from '../config/porchConfig';
 
 const Porches = () => {
   return (
-    <Box bg={'#fff'} p="3rem" flexGrow={1}>
-      <Heading color={'brand.red'} size="3xl" textAlign={'center'} mt="0">
+    <Box bg={'#fff'} p={['1rem', '2rem']} flexGrow={1}>
+      <Heading color={'brand.red'} size="2xl" textAlign={'center'} mt="0">
         PORCH LINEUPS
       </Heading>
       <Divider
@@ -23,7 +23,7 @@ const Porches = () => {
         fontWeight="700"
         color={'brand.red'}
         fontSize="xl"
-        mb="2rem"
+        mb={['1rem', '2rem']}
       >
         CLICK TO VIEW INFO
       </Text>
@@ -32,7 +32,6 @@ const Porches = () => {
           src={map}
           alt="Map of porches"
           border={'1px'}
-          borderWidth={'4px'}
           borderColor={'brand.darkblue'}
         />
         {porchConfig.map((porch) => {
@@ -50,7 +49,7 @@ const Porches = () => {
               _hover={{ bg: 'transparent', filter: 'brightness(0.8)' }}
               _active={{ bg: 'transparent' }}
             >
-              <Image src={porch.image} alt={porch.alt} />
+              {/* <Image src={porch.image} alt={porch.alt} /> */}
             </Button>
           );
         })}
