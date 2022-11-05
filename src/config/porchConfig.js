@@ -262,4 +262,51 @@ const porchDetails = [
   },
 ];
 
+export const foodDetails = [
+  {
+    id: 1,
+    name: 'Biggie Boy BBQ',
+    link: {
+      facebook: 'https://www.facebook.com/biggieboybbq/',
+    },
+  },
+  {
+    id: 2,
+    name: `Loly's Tortas and Hotdogs`,
+    link: {
+      facebook: 'https://www.facebook.com/people/Lolys-Tortas/100078659748303/',
+    },
+  },
+  {
+    id: 3,
+    name: `Gigi's Peruvian Fusion`,
+    link: { website: 'http://gigisfusion.com/' },
+  },
+  {
+    id: 4,
+    name: 'The Sweet Coqui',
+    link: { facebook: 'https://www.facebook.com/thesweetcoqui/' },
+  },
+  {
+    id: 5,
+    name: 'Tacoqueta',
+    link: { facebook: 'https://www.facebook.com/TacoquetaFoodTruck/' },
+  },
+  {
+    id: 6,
+    name: 'DC Jumbie Latin Caribbean',
+    link: {
+      facebook: 'https://www.facebook.com/dcjumbielatincaribbeansoulfood/',
+    },
+  },
+  {
+    id: 7,
+    name: 'West Coast Trolley II',
+    link: {
+      facebook:
+        'https://www.facebook.com/profile.php?id=100057417340613&ref=py_c',
+    },
+  },
+];
+
 export default porchDetails;
