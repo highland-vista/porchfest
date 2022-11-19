@@ -1,4 +1,4 @@
-import { Button, Heading, Box, Divider, Text, Image } from '@chakra-ui/react';
+import { Button, Heading, Box, Text, Image } from '@chakra-ui/react';
 import { NavLink, Routes, Route } from 'react-router-dom';
 
 import PorchDetails from '../components/PorchDetails';
@@ -9,24 +9,15 @@ import porchConfig from '../config/porchConfig';
 const Porches = () => {
   return (
     <Box bg={'#fff'} p={['1rem', '2rem']} flexGrow={1}>
-      <Heading color={'brand.red'} size="2xl" textAlign={'center'} mt="0">
-        PORCH LINEUPS
-      </Heading>
-      <Divider
-        borderColor={'brand.yellow'}
-        borderBottomWidth="3px"
-        w="50%"
-        m="1rem auto"
-      />
-      <Text
-        textAlign={'center'}
-        fontWeight="700"
+      <Heading
         color={'brand.red'}
-        fontSize="xl"
+        size="2xl"
+        textAlign={'center'}
+        mt="0"
         mb={['1rem', '2rem']}
       >
-        CLICK TO VIEW INFO
-      </Text>
+        PORCH LINEUPS
+      </Heading>
       <Box position={'relative'}>
         <Image
           src={map}

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import Card from '../components/Card';
 
 const PorchDetails = ({ porchConfig }) => {
